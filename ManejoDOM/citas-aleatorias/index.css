@@ -1,0 +1,90 @@
+/*ajustes generales*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+/*ajustes del cuerpo*/
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(/imagenes/Biblioteca.jpg) no-repeat center center/cover;
+}
+
+
+/*ajustes del contenido centrado*/
+.contenido-centrado {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/*contenedor*/
+.contenedor {
+  width: 80vh;
+  max-width: 600px;
+  min-height: 500px;
+  padding: 20px;
+  background-color: white;
+  border: 5px solid black;
+  border-radius: 30px;
+}
+
+/*contenedor interno*/
+.contenedor-interno {
+  width: 80%;
+
+}
+
+/*Contenido*/
+
+#titulo {
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Courgette',cursive;
+}
+
+#cita {
+  font-size: 32px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
+}
+
+#autor {
+  width: 100%;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: 'Courgette',cursive;
+}
+
+#boton-cambiar-cita {
+  width: 180px;
+  height: 50px;
+  font-size: 20px;
+}
+
+/*Pie de pagina footer*/
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+  padding: 1px;
+}

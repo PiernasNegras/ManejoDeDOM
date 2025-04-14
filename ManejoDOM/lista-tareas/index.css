@@ -1,0 +1,140 @@
+/* Ajustes generales */
+
+* {
+  padding: 0;
+  margin: 0;
+  /* Esta propiedad determina como se va a calcular el alto y el ancho de los elementos */
+  box-sizing: border-box;
+  font-family: 'Roboto',sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 0px;
+  background: url(imagenes/fondo.jpg) no-repeat center center/cover;
+}
+
+/* CONTENEDORES */
+
+.contenedor {
+  width: 700px;
+  min-height: 500px;
+  background-color: antiquewhite;
+  padding: 40px;
+  border: 5px solid black;
+  border-radius: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+/* TITULO */
+h1 { 
+  font-size: 50px;
+  font-weight: bold;
+}
+
+/* input */
+input {
+  width: 80%;
+  height: 50px;
+  font-size: 25px;
+  margin: 20px;
+  padding: 10px;
+  border: 4px solid rgba(165, 42, 42, 0.767);
+  border-radius: 10px;
+}
+
+/* BOTON */
+button {
+  width: 150px;
+  height: 60px;
+  padding: 10px;
+  color: white;
+  background-color: #1312a8;
+  font-size: 22px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* LISTA DE TAREAS */
+#lista-de-tareas {
+  width: 80%;
+  margin-top: 20px;
+}
+
+/* TAREAS */
+.tarea {
+  width: 100%;
+  min-height: 70px;
+  font-size: 25px;
+  padding: 10px;
+  margin-top: 10px;
+  color: white;
+  background-color: #407ba6;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* TAREA COMPLETADA */
+.tarea.completada {
+  /* ESTO VA A TACHAR A UNA TAREA QUE TENGA LA CLASE COMPLETADA */
+  text-decoration: line-through;
+  background-color: rgb(60, 194, 26);
+  border: none;
+}
+
+tarea p {
+  max-width: 350px;
+}
+
+/* ICONOS  */
+
+i {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.icono-completar {
+  color: rgb(00, 255,0);
+}
+
+.icono-eliminar {
+  color: silver;
+}
+
+.icono-editar {
+  color: white;
+}
+
+.icono-completar:hover,
+.icono-eliminar:hover,
+.icono-editar:hover {
+  background-color: rgb(255,255,255, 0.523);
+}
+
+
+/*Pie de pagina footer*/
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+  padding: 1px;
+}
+
